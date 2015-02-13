@@ -91,7 +91,7 @@ gem 'time_date_helpers', '0.0.2'
 
 # Additional gems that are very useful in Rails development
 group :development do
-  gem 'sqlite3', '1.3.9'
+  # gem 'sqlite3', '1.3.9'
   gem 'quiet_assets', '1.0.2'
   gem 'thin', '1.6.2'
   gem 'better_errors', '1.1.0'
@@ -105,7 +105,7 @@ end
 
 # Gems used only in testing
 group :test do
-  gem 'sqlite3', '1.3.9'
+  # gem 'sqlite3', '1.3.9'
   gem 'shoulda', '3.5.0'
   gem 'shoulda-matchers', '2.5.0'
   gem 'factory_girl_rails', '4.4.1'
