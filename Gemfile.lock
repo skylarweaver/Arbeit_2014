@@ -151,8 +151,6 @@ GEM
       multi_json
       simplecov-html (~> 0.8.0)
     simplecov-html (0.8.0)
-    single_test (0.6.0)
-      rake
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -212,7 +210,6 @@ DEPENDENCIES
   shoulda-matchers (= 2.5.0)
   simple_form (= 3.0.1)
   simplecov (= 0.8.2)
-  single_test
   thin (= 1.6.2)
   turn (= 0.9.6)
   uglifier (= 2.5.0)

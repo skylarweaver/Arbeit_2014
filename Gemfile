@@ -50,7 +50,7 @@ group :test do
   gem 'mocha', require: false
   gem 'simplecov', '0.8.2'
   gem 'turn', '0.9.6'
-  gem 'single_test'
+  # gem 'single_test'
 end
 
 group :production, :staging do
