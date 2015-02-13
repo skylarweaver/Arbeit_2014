@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Gems rails wants automatically
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.13'
 # gem 'sqlite3', '1.3.9'
 gem 'pg'
 gem 'sass-rails', '4.0.2'
@@ -50,7 +50,7 @@ group :test do
   gem 'mocha', require: false
   gem 'simplecov', '0.8.2'
   gem 'turn', '0.9.6'
-  gem 'single_test', '0.6.0'
+  gem 'single_test'
 end
 
 group :production, :staging do
