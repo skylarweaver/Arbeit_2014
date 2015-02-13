@@ -101,6 +101,9 @@ group :development do
   gem 'hirb', '0.7.1'
   gem 'faker', '1.3.0'
   gem 'capistrano', '2.15.5'
+  # gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  # gem 'capistrano-rvm', github: "capistrano/rvm"
 end
 
 # Gems used only in testing
