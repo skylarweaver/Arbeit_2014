@@ -9,8 +9,9 @@ development:
   database: db/development
   pool: 5
   timeout: 5000
-  username: sdeploy
-  password: 373
+  # username: akash
+  # password: mousedata
+
 #can specify to be another server host (pawn.hss)
 #adapter is postgressql
 #LOOK AT DEPLOY ONE
@@ -25,8 +26,8 @@ test:
   database: db/test
   pool: 5
   timeout: 5000
-  username: sdeploy
-  password: 373
+  # username: akash
+  # password: mousedata
 
 production:
   adapter: postgresql
@@ -34,5 +35,5 @@ production:
   database: db/production
   pool: 5
   timeout: 5000
-  username: sdeploy
-  password: 373
+  username: akash
+  password: mousedata
