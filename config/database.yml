@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   # database: db/development.sqlite3
-  database: db/development
+  database: development
   pool: 5
   timeout: 5000
   # username: akash
@@ -23,7 +23,7 @@ development:
 test:
   adapter: postgresql
   # database: db/test.sqlite3
-  database: db/test
+  database: test
   pool: 5
   timeout: 5000
   # username: akash
@@ -32,7 +32,7 @@ test:
 production:
   adapter: postgresql
   # database: db/production.sqlite3
-  database: db/production
+  database: production
   pool: 5
   timeout: 5000
   # username: akash
