@@ -15,6 +15,7 @@ development:
 #can specify to be another server host (pawn.hss)
 #adapter is postgressql
 #LOOK AT DEPLOY ONE
+#needed to create sdeploy user in psql
 #Gem file in preoduction group (add if not there) needs to gem 'pg'
 
 # Warning: The database defined as "test" will be erased and
@@ -32,8 +33,8 @@ test:
 production:
   adapter: postgresql
   # database: db/production.sqlite3
-  database: production
+  database: arbeit4
   pool: 5
   timeout: 5000
-  # username: akash
-  # password: mousedata
+  username: sdeploy
+  password: mousedata
