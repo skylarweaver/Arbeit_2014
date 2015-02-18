@@ -36,5 +36,5 @@ production:
   database: <%= SETTINGS[:production_database] %>
   pool: 5
   timeout: 5000
-  username: <%= SETTINGS[:db_user]
-  password: <%= SETTINGS[:db_password]
+  username: <%= SETTINGS[:db_user] %>
+  password: <%= SETTINGS[:db_password] %>
