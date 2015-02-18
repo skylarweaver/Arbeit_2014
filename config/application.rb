@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+SETTINGS = YAML.load(File.read(File.expand_path('../settings.yml', __FILE__)))
+SETTINGS.merge! SETTINGS.fetch(Rails.env, {})
+SETTINGS.symbolize_keys!
+
 module Arbeit4
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

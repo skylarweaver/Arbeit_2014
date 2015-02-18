@@ -37,10 +37,17 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
-  # task :symlink_shared do
-  #   run "ln -s /home/deploy/apps/arbeit/shared/settings.yml /home/deploy/apps/arbeit/releases/#{release_name}/config/"
-  # end
+  task :symlink_shared do
+    run "ln -s /home/deploy/apps/arbeit/shared/settings.yml /home/deploy/apps/arbeit/releases/#{release_name}/config/"
+  end
 end
 
-# before "deploy:assets:precompile", "deploy:symlink_shared"
-# after "deploy:symlink_shared", "deploy:migrate"
+before "deploy:assets:precompile", "deploy:symlink_shared"
+after "deploy:symlink_shared", "deploy:migrate"
+
+#Steps
+#uncomment stuff above
+#add settings to git ignore
+#ftp settings file to server in this: /home/deploy/apps/arbeit/shared/settings.yml 
+#Check out deploy branch to copy stuff from there
+#setttings won't be in git repsository so we will be storing it on the server securely (unless they are logged in, tthey won't see). Could even  use SFTP, securer*
