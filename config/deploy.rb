@@ -38,7 +38,7 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
   task :symlink_shared do
-    run "ln -s /home/deploy/apps/arbeit/shared/settings.yml /home/deploy/apps/arbeit/releases/#{release_name}/config/"
+    run "ln -s /home/sdeploy/apps/arbeit/shared/settings.yml /home/sdeploy/apps/arbeit/releases/#{release_name}/config/"
   end
 end
 
